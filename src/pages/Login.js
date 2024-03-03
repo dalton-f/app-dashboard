@@ -1,5 +1,5 @@
 import React from "react";
 
-export default function LoggedOut() {
+export default function Login() {
   return <div></div>;
 }

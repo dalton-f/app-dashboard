@@ -1,5 +1,5 @@
 import React from "react";
 
-export default function LoggingIn() {
+export default function Home() {
   return <div></div>;
 }

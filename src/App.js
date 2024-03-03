@@ -7,7 +7,19 @@ import {
   createRoutesFromElements,
 } from "react-router-dom";
 
-const router = createBrowserRouter(createRoutesFromElements());
+import Home from "./pages/Home";
+import Login from "./pages/Login";
+import Dashboard from "./pages/Dashboard";
+
+const router = createBrowserRouter(
+  createRoutesFromElements(
+    <>
+      <Route path="/" element={<Home />} />
+      <Route path="login" element={<Login />} />
+      <Route path="dashboard" element={<Dashboard />} />
+    </>
+  )
+);
 
 export default function App() {
   return <RouterProvider router={router} />;
