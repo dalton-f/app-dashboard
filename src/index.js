@@ -5,4 +5,5 @@ import "./assets/index.css";
 
 const rootElement = document.getElementById("root");
 const root = ReactDOM.createRoot(rootElement);
+
 root.render(<App />);
