@@ -18,7 +18,7 @@
   },
   "scripts": {
     "lint:js": "npx eslint ./src/js",
-    "dev": "npx mix",
+    "dev": "npx mix watch",
     "prod": "npx mix --production",
     "prepare": "husky"
   }

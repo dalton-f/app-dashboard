@@ -1,5 +1,48 @@
+echo ""
+
+# Run JavaScript Linter
+echo "🚀 Running JavaScript linter..."
 npm run lint:js
+
+if [ $? -eq 0 ]; then
+  echo "✅ Linting passed!"
+else
+  echo "❌ Linting failed! Please fix the issues."
+  exit 1
+fi
+
+echo ""
+
+# Build the production code
+echo "🏗️  Building production files..."
 npm run prod
+
+echo ""
+
+if [ $? -eq 0 ]; then
+  echo "✅ Build successful!"
+else
+  echo "❌ Build failed! Please check the errors."
+  exit 1
+fi
+
+echo ""
+
+# Add all changes to git
+echo "📂 Adding changed files to git..."
+
 git add -A
 
+echo ""
 
+
+if [ $? -eq 0 ]; then
+  echo "👍 All files added to git!"
+else
+  echo "❌ Failed to add files to git."
+  exit 1
+fi
+
+echo ""
+
+echo "🎉 Pre-commit checks completed successfully!"
