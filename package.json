@@ -20,6 +20,7 @@
     "lint:js": "npx eslint ./src/js",
     "dev": "npx mix watch",
     "prod": "npx mix --production",
-    "prepare": "husky"
+    "prepare": "husky",
+    "push:upstream": "git push origin main -u"
   }
 }

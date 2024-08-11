@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .button {
+    @apply grid w-full max-w-28 cursor-pointer place-items-center rounded-full border border-white/10 bg-white/10 p-2.5 shadow backdrop-blur-sm transition-colors duration-300 ease-linear hover:border-white/30 hover:bg-white/20 focus:border-white/30 focus:bg-white/20;
+  }
+}
+
+@layer utilities {
+  .grid-span-full {
+    @apply col-span-full row-span-full;
+  }
+}
